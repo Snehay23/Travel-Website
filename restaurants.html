@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Mumbai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mumbai Travel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Restaurants in Mumbai</h2>
+            <section class="filter-section">
+                <label for="cuisine">Choose Cuisine:</label>
+                <select id="cuisine" name="cuisine">
+                    <option value="all">All</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                </select>
+            </section>
+
+            <section class="restaurant-list">
+                <!-- Restaurant 1 -->
+                <article class="restaurant">
+                    <img src="rest1.jpg" alt="Interior of B Bhagat Tarachand restaurant" />
+                    <h3>B Bhagat Tarachand</h3>
+                    <p><strong>Cuisine:</strong> Indian</p>
+                    <p><strong>Address:</strong> 69/75 Mumbadevi Commercial Center</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                </article>
+                <!-- Restaurant 2 -->
+                <article class="restaurant">
+                    <img src="rest2.jpg" alt="Interior of Bastian restaurant" />
+                    <h3>Bastian</h3>
+                    <p><strong>Cuisine:</strong> Chinese, Mexican</p>
+                    <p><strong>Address:</strong> Linking Road, Bandra West</p>
+                    <p><strong>Rating:</strong> ★★★☆☆</p>
+                </article>
+                <!-- Restaurant 3 -->
+                <article class="restaurant">
+                    <img src="rest3.jpg" alt="Interior of Trishna restaurant" />
+                    <h3>Trishna</h3>
+                    <p><strong>Cuisine:</strong> Indian</p>
+                    <p><strong>Address:</strong> 8, Sai Baba Marg, Kala Ghoda</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                </article>
+                <!-- Restaurant 4 -->
+                <article class="restaurant">
+                    <img src="rest4.jpg" alt="Interior of Britannia & Co. restaurant" />
+                    <h3>Britannia & Co.</h3>
+                    <p><strong>Cuisine:</strong> Italian</p>
+                    <p><strong>Address:</strong> 11, Sports Complex, Ballard Estate</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                </article>
+                <!-- Restaurant 5 -->
+                <article class="restaurant">
+                    <img src="rest5.jpg" alt="Interior of The Bombay Canteen restaurant" />
+                    <h3>The Bombay Canteen</h3>
+                    <p><strong>Cuisine:</strong> Chinese</p>
+                    <p><strong>Address:</strong> Unit 1, G/1, V. B. Desai Financial Services Ltd., Kamala Mills Compound</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                </article>
+                <!-- Restaurant 6 -->
+                <article class="restaurant">
+                    <img src="rest6.jpg" alt="Interior of Masala Library restaurant" />
+                    <h3>Masala Library</h3>
+                    <p><strong>Cuisine:</strong> All</p>
+                    <p><strong>Address:</strong> 4th Floor, Bandra-Kurla Complex, Kamala Mills Compound</p>
+                    <p><strong>Rating:</strong> ★★★★★</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mumbai Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+            <!-- Map View -->
+            <div id="map" class="map"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+            <div class="footer-contact">
+                <p>Address: Mumbai, India</p>
+                <p>Phone: +91 123 456 7890</p>
+                <p>Email: info@mumbaitravel.com</p>
+            </div>
+            <div class="footer-newsletter">
+                <form>
+                    <input type="email" placeholder="Subscribe to our newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

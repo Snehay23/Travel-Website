@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Attractions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bdbbbb;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .filter {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .filter label {
+            font-size: 1.4em;
+            color: #232222;
+        }
+        .filter select {
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 4px;
+            border: 1px solid #b1afaf;
+            background-color: #dddcdc;
+            color: #171616;
+        }
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .attraction-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .attraction-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+        .attraction-item h3 {
+            margin: 15px 0;
+            font-size: 1.6em;
+            color: #333;
+        }
+        .address {
+            font-size: 1.1em;
+            color: #000000; /* Dark black color */
+            margin: 10px 0;
+        }
+        .beach { border: 5px solid #e06c07; }
+        .theater { border: 5px solid #e06c07; }
+        .historical { border: 5px solid #e06c07; }
+        .garden { border: 5px solid #e06c07; }
+        .religious { border: 5px solid #e06c07; }
+        .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff5722; /* Bright orange color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #be3c15; /* Darker orange for hover effect */
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    background-color: #9e2f0e; /* Even darker orange when clicked */
+}
+.footer {
+            background-color: #c5c6c7;
+            color: rgb(36, 36, 36);
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="attractions">
+        <div class="container">
+            <div class="filter">
+                <label for="attraction-filter">Filter by:</label>
+                <select id="attraction-filter">
+                    <option value="all">All</option>
+                    <option value="beach">Beaches</option>
+                    <option value="theater">Theaters</option>
+                    <option value="historical">Historical Places</option>
+                    <option value="garden">Gardens</option>
+                    <option value="religious">Religious Places</option>
+                </select>
+            </div>
+            <div class="attractions-grid">
+                <!-- Beaches -->
+                <div class="attraction-item beach">
+                    <img src="B1.jpg" alt="Utopia Beach">
+                    <h3>Utopia Beach</h3>
+                    <p class="address">Address: Utopia Beach, Near Madh Island, Mumbai, Maharashtra, India</p>
+                    <a href="utopiaB.html" class="cta-button">Learn More</a>
+                </div>
+                <div class="attraction-item beach">
+                    <img src="B2.jpg" alt="Madh Island">
+                    <h3>Madh Island</h3>
+                    <p class="address">Address: Madh Island, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item beach">
+                    <img src="B3.jpg" alt="Arnala Beach">
+                    <h3>Arnala Beach</h3>
+                    <p class="address">Address: Arnala, Vasai, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item beach">
+                    <img src="B4.jpg" alt="Akhil Beach">
+                    <h3>Akhil Beach</h3>
+                    <p class="address">Address: Akhil Beach, Alibaug, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item beach">
+                    <img src="B5.jpg" alt="Mandwa Beach">
+                    <h3>Mandwa Beach</h3>
+                    <p class="address">Address: Mandwa, Raigad, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item beach">
+                    <img src="B6.jpg" alt="Versova Beach">
+                    <h3>Versova Beach</h3>
+                    <p class="address">Address: Versova, Mumbai, Maharashtra, India</p>
+                </div>
+                <!-- Historical Places -->
+                <div class="attraction-item historical">
+                    <img src="H1.jpg" alt="Jijamata Udyan">
+                    <h3>Jijamata Udyan</h3>
+                    <p class="address">Address: Jijamata Udyan, Byculla, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item historical">
+                    <img src="H2.jpg" alt="Chor Bazaar">
+                    <h3>Chor Bazaar</h3>
+                    <p class="address">Address: Chor Bazaar, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item historical">
+                    <img src="H3.jpg" alt="Keneseth Eli Yahuda Synagogue">
+                    <h3>Keneseth Eli Yahuda Synagogue</h3>
+                    <p class="address">Address: Keneseth Eli Yahuda Synagogue, Byculla, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item historical">
+                    <img src="H4.jpg" alt="Chhatrapati Shivaji Maharaj Terminus">
+                    <h3>Chhatrapati Shivaji Maharaj Terminus</h3>
+                    <p class="address">Address: Chhatrapati Shivaji Maharaj Terminus, CST, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item historical">
+                    <img src="H5.jpg" alt="Raja Ram Moreshwar Temple">
+                    <h3>Raja Ram Moreshwar Temple</h3>
+                    <p class="address">Address: Raja Ram Moreshwar Temple, Thane, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item historical">
+                    <img src="H6.jpg" alt="Vasai Fort">
+                    <h3>Vasai Fort</h3>
+                    <p class="address">Address: Vasai Fort, Vasai, Mumbai, Maharashtra, India</p>
+                </div>
+                <!-- Theaters -->
+                <div class="attraction-item theater">
+                    <img src="T1.jpg" alt="Lotus Theatre">
+                    <h3>Lotus Theatre</h3>
+                    <p class="address">Address: Lotus Theatre, Lower Parel, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item theater">
+                    <img src="T2.jpg" alt="Shree Siddhivinayak Theatre">
+                    <h3>Shree Siddhivinayak Theatre</h3>
+                    <p class="address">Address: Shree Siddhivinayak Theatre, Dadar, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item theater">
+                    <img src="T3.jpg" alt="Kalidas Theatre">
+                    <h3>Kalidas Theatre</h3>
+                    <p class="address">Address: Kalidas Theatre, Mulund, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item theater">
+                    <img src="T4.jpg" alt="The Legend Theatre">
+                    <h3>The Legend Theatre</h3>
+                    <p class="address">Address: The Legend Theatre, Andheri, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item theater">
+                    <img src="T5.jpg" alt="Royal Opera House">
+                    <h3>Royal Opera House</h3>
+                    <p class="address">Address: Royal Opera House, Charni Road, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item theater">
+                    <img src="T6.jpg" alt="Harbour Theatre">
+                    <h3>Harbour Theatre</h3>
+                    <p class="address">Address: Harbour Theatre, Colaba, Mumbai, Maharashtra, India</p>
+                </div>
+                <!-- Gardens -->
+                <div class="attraction-item garden">
+                    <img src="G1.jpg" alt="Sanjay Gandhi National Park">
+                    <h3>Sanjay Gandhi National Park</h3>
+                    <p class="address">Address: Sanjay Gandhi National Park, Borivali, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item garden">
+                    <img src="G2.jpg" alt="Andheri Garden">
+                    <h3>Andheri Garden</h3>
+                    <p class="address">Address: Andheri Garden, Andheri, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item garden">
+                    <img src="G3.jpg" alt="Mahim Nature Park">
+                    <h3>Mahim Nature Park</h3>
+                    <p class="address">Address: Mahim Nature Park, Mahim, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item garden">
+                    <img src="G4.jpg" alt="Nerul Nature Park">
+                    <h3>Nerul Nature Park</h3>
+                    <p class="address">Address: Nerul Nature Park, Nerul, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item garden">
+                    <img src="G5.jpg" alt="Kanheri Caves">
+                    <h3>Kanheri Caves</h3>
+                    <p class="address">Address: Kanheri Caves, Borivali, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item garden">
+                    <img src="G6.jpg" alt="Bye Bye Beach">
+                    <h3>Bye Bye Beach</h3>
+                    <p class="address">Address: Bye Bye Beach, Alibaug, Mumbai, Maharashtra, India</p>
+                </div>
+                <!-- Religious Places -->
+                <div class="attraction-item religious">
+                    <img src="R1.jpg" alt="St. Mary’s Church">
+                    <h3>St. Mary’s Church</h3>
+                    <p class="address">Address: St. Mary’s Church, Mazgaon, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item religious">
+                    <img src="R2.jpg" alt="Mahalaxmi Temple">
+                    <h3>Mahalaxmi Temple</h3>
+                    <p class="address">Address: Mahalaxmi Temple, Mahalaxmi, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item religious">
+                    <img src="R3.jpg" alt="Mandapeshwar Cave Temples">
+                    <h3>Mandapeshwar Cave Temples</h3>
+                    <p class="address">Address: Mandapeshwar Cave Temples, Borivali, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item religious">
+                    <img src="R4.jpg" alt="Mount Mary Church">
+                    <h3>Mount Mary Church</h3>
+                    <p class="address">Address: Mount Mary Church, Bandra, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item religious">
+                    <img src="R5.jpg" alt="Siddhivinayak Temple">
+                    <h3>Siddhivinayak Temple</h3>
+                    <p class="address">Address: Siddhivinayak Temple, Prabhadevi, Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="attraction-item religious">
+                    <img src="R6.jpg" alt="Haji Ali Dargah">
+                    <h3>Haji Ali Dargah</h3>
+                    <p class="address">Address: Haji Ali Dargah, Worli, Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer"></div>
+        <p>&copy; 2024 Mumbai Attractions. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById('attraction-filter').addEventListener('change', function() {
+            var filter = this.value;
+            var items = document.querySelectorAll('.attraction-item');
+            
+            items.forEach(function(item) {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

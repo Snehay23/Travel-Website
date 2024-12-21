@@ -1,0 +1,743 @@
+/* Basic Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: #D3D3D3;
+} 
+
+/* General styles for the header */
+header {
+    background-color: #333; /* Dark background color for the header */
+    color: #fff;            /* White text color */
+    padding: 10px 0;       /* Vertical padding for the header */
+}
+
+header .container {
+    width: 80%;             /* Container width */
+    margin: 0 auto;        /* Center the container */
+    display: flex;         /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center;   /* Center items vertically */
+}
+
+header .logo h1 {
+    font-size: 28px;       /* Font size for the header text */
+}
+
+header nav ul {
+    list-style: none;      /* Remove default list styles */
+    padding: 0;           /* Remove default padding */
+    margin: 0;            /* Remove default margin */
+    display: flex;        /* Display list items in a row */
+}
+
+header nav ul li {
+    margin-left: 20px;    /* Space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;          /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 20px;      /* Font size for navigation links */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    color: #FFD700;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color:#FFD700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Base styles for CTA buttons */
+.cta-button {
+    background-color: #FFD700; /* Vibrant color for the buttons */
+    color: #000000;               /* White text color */
+    border: none;              /* Remove default border */
+    padding: 10px 20px;       /* Padding for the button */
+    margin: 10px;             /* Space around the button */
+    font-size: 18px;          /* Font size */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    text-decoration: none;    /* Remove underline */
+    display: inline-block;   /* Ensure the button fits content */
+}
+
+.cta-button:hover {
+    background-color: #ff7300; /* Darker shade for hover effect */
+}
+/* Hero Section styles */
+.hero {
+    background: rgba(0, 0, 0, 0.19); /* Background color for the hero section */
+    padding: 50px 20px;       /* Padding for the section */
+    text-align: center;       /* Center text */
+}
+
+.hero-content h2 {
+    font-size: 23px;         /* Large font size for the heading */
+    margin-bottom: 13px; 
+    color: #fff;   /* Space below the heading */
+}
+
+.hero-content p {
+    font-size: 18px;         /* Font size for the paragraph */
+    margin-bottom: 30px;    /* Space below the paragraph */
+}
+
+/* Container for the featured attractions section */
+.featured-attractions {
+    background: rgba(0, 0, 0, 0.1); /* Light background color for the section */
+    padding: 50px 20px; /* Vertical and horizontal padding */
+}
+
+.featured-attractions .container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Horizontal padding */
+}
+
+.featured-attractions h2 {
+    font-size: 28px; /* Font size for the heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 40px; /* Space below the heading */
+    color: #333; /* Dark text color for readability */
+}
+
+.featured-attractions .attractions-grid {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to new lines if necessary */
+    gap: 20px; /* Space between grid items */
+}
+
+.featured-attractions .attraction {
+    background-color: #fff; /* White background for each attraction card */
+    border: 1px solid #ddd; /* Light border around each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content doesn’t overflow */
+    text-align: center; /* Center align text */
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width, 3 items per row */
+    max-width: 350px; /* Maximum width for each card */
+    margin: 0 auto; /* Center each card within its flex item */
+}
+
+.featured-attractions .attraction img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Border below image */
+}
+
+.featured-attractions .attraction h3 {
+    font-size: 20px; /* Font size for the title */
+    margin: 20px 0 10px; /* Margin for spacing */
+    color: #333; /* Dark text color */
+}
+
+.featured-attractions .attraction p {
+    font-size: 16px; /* Font size for description */
+    color: #666; /* Gray text color */
+    padding: 0 15px; /* Padding for text */
+    margin: 0 0 20px; /* Margin below paragraph */
+}
+.featured-attractions .attraction:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.featured-attractions .attraction:hover img {
+    transform: scale(1.1); /* Slightly zoom in the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-attractions .attractions-grid {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .featured-attractions .attraction {
+        flex: 1 1 auto; /* Full width on small screens */
+        max-width: 100%; /* Allow full width */
+    }
+}
+
+
+.featured-attractions, .upcoming-events, .travel-tips {
+    padding: 50px 0;
+}
+
+.featured-attractions .attractions-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-attractions .attraction {
+    flex: 1;
+}
+
+/* Container for the upcoming events section */
+.upcoming-events {
+    background: rgba(0, 0, 0, 0.19); /* Light background color for the section */
+    padding: 50px 20px; /* Vertical and horizontal padding */
+}
+
+.upcoming-events .container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Horizontal padding */
+}
+
+.upcoming-events h2 {
+    font-size: 25px; /* Font size for the heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 40px; /* Space below the heading */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Grid for the events */
+.upcoming-events .events-grid {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
+    gap: 20px; /* Space between grid items */
+    justify-content: center; /* Center align items horizontally */
+}
+
+/* Event card styling */
+.upcoming-events .event {
+    background-color: #fff; /* White background for each event card */
+    border: 1px solid #ddd; /* Light border around each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content doesn’t overflow */
+    text-align: center; /* Center align text */
+    width: 300px; /* Fixed width for each card */
+    height: 400px; /* Fixed height for each card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Smooth transition for effects */
+    animation: fadeIn 1s ease-out; /* Animation for fade-in effect */
+    display: flex; /* Flexbox for vertical layout within card */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between content */
+}
+
+/* Image styling */
+.upcoming-events .event img {
+    width: 100%; /* Full width for the image */
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-bottom: 1px solid #ddd; /* Border below image */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Hover effects for event cards */
+.upcoming-events .event:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    opacity: 0.9; /* Slight opacity change on hover */
+}
+
+/* Hover effects for images */
+.upcoming-events .event:hover img {
+    transform: scale(1.1); /* Slightly zoom in the image */
+}
+
+/* Title styling */
+.upcoming-events .event h3 {
+    font-size: 19px; /* Font size for the title */
+    margin: 20px 0 10px; /* Margin for spacing */
+    color: #333; /* Dark text color */
+}
+
+/* Description styling */
+.upcoming-events .event p {
+    font-size: 16px; /* Font size for description */
+    color: #666; /* Gray text color */
+    padding: 0 15px; /* Padding for text */
+    margin: 0 0 10px; /* Margin below paragraph */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start with a slight offset */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the normal position */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upcoming-events .events-grid {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center align items */
+        overflow-x: visible; /* Remove horizontal scroll on small screens */
+    }
+
+    .upcoming-events .event {
+        width: 100%; /* Full width on small screens */
+        max-width: 500px; /* Maximum width for each card */
+    }
+}
+
+/* Basic styling for footer */
+footer {
+    background: rgba(0, 0, 0, 0.3); /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 10px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+}
+
+.footer-social {
+    margin-bottom: 20px; /* Space below social icons */
+}
+
+.footer-social a {
+    display: inline-block; /* Display icons inline */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.footer-social a img {
+    width: 30px; /* Fixed size for social icons */
+    height: 30px; /* Fixed size for social icons */
+}
+
+/* Hover effects for social icons */
+.footer-social a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    filter: brightness(1.2); /* Slightly brighten the icon */
+}
+
+/* Styling for contact information */
+.footer-contact p {
+    margin: 5px 0; /* Space between contact information lines */
+    font-size: 18px; /* Font size for contact information */
+}
+
+/* Styling for newsletter section */
+.footer-newsletter form {
+    display: flex; /* Flexbox layout for the form */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center align form elements */
+    gap: 10px; /* Space between form elements */
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px; /* Padding inside the input field */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width input */
+    max-width: 300px; /* Maximum width for the input */
+    font-size: 17px; /* Font size inside the input */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.footer-newsletter input[type="email"]:focus {
+    background-color: #f0f0f0; /* Light background on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.footer-newsletter button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e5a649; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 17px; /* Font size inside the button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effects for the button */
+.footer-newsletter button:hover {
+    background-color: #9c6a0d; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-social {
+        margin-bottom: 10px; /* Reduce space below social icons on small screens */
+    }
+
+    .footer-newsletter form {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center align form elements */
+    }
+
+    .footer-newsletter input[type="email"] {
+        width: 100%; /* Full width input on small screens */
+    }
+
+    .footer-newsletter button {
+        width: 100%; /* Full width button on small screens */
+        max-width: 300px; /* Maximum width for button */
+    }
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D3D3D3;
+    font-family: Arial, sans-serif;
+}
+
+/* General styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: #FFD700;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.filter-section select {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Restaurant List Styles */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.restaurant {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    margin: 0 auto; /* Center alignment */
+    padding: 15px;
+}
+
+.restaurant img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.restaurant h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.restaurant p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px;
+    margin: 0 0 15px;
+}
+
+/* Hover Effects for Restaurants */
+.restaurant:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurant {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+    
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    header nav ul li {
+        margin: 5px 0;
+    }
+    
+    .filter-section {
+        text-align: center;
+    }
+    
+    .restaurant-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    
+    background-color: #D3D3D3;
+    font-family: Arial, sans-serif;
+}
+
+/* Travel Tips Section */
+.travel-tips {
+    background-color: #f5f5f5; /* Light background color for the section */
+    padding: 60px 20px; /* Increased padding for better spacing */
+}
+
+.travel-tips .container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Horizontal padding */
+}
+
+.travel-tips h2 {
+    font-size: 32px; /* Larger font size for the heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 40px; /* Space below the heading */
+    color: #333; /* Dark text color for readability */
+    position: relative; /* For adding an underline effect */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Underline effect for heading */
+.travel-tips h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #333;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.4s ease, background-color 0.4s ease; /* Smooth transition for underline effect */
+}
+
+/* Expand underline and change color on hover */
+.travel-tips h2:hover::after {
+    width: 98px; /* Expand underline on hover */
+    background-color: #fe9b06; /* Change underline color on hover */
+}
+
+/* Title inside Tip */
+.tip h3 {
+    font-size: 22px; /* Slightly larger font size for the title */
+    margin-bottom: 15px; /* Margin below the title */
+    color: #333; /* Dark text color */
+    position: relative; /* For adding a decorative line if needed */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change color of h3 on hover */
+.tip h3:hover {
+    color: #f88808; /* Change this to the color you want on hover */
+}
+
+
+/* Tips List */
+.tips-list {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack tips vertically */
+    gap: 20px; /* Space between tips */
+}
+
+/* Individual Tip */
+.tip {
+    background-color: #fff; /* White background for each tip */
+    border: 1px solid #ddd; /* Light border around each tip */
+    border-radius: 12px; /* Slightly larger rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    padding: 25px; /* Increased padding inside the tip */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, filter 0.4s ease; /* Smooth transition for effects */
+    animation: fadeInUp 0.6s ease-out; /* Animation for fade-in and slide-up effect */
+    background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Subtle gradient background */
+    filter: grayscale(100%); /* Grayscale effect for unhovered state */
+}
+
+/* Title inside Tip */
+.tip h3 {
+    font-size: 22px; /* Slightly larger font size for the title */
+    margin-bottom: 15px; /* Margin below the title */
+    color: #333; /* Dark text color */
+    position: relative; /* For adding a decorative line */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Decorative line for title */
+.tip h3::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    bottom: -10px; /* Position below the title */
+    left: 0;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right;
+    transition: transform 0.4s ease, background-color 0.4s ease; /* Smooth transition for decorative line effect */
+}
+
+/* Description inside Tip */
+.tip p {
+    font-size: 18px; /* Larger font size for description */
+    color: #666; /* Gray text color */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Hover effects for tips */
+.tip:hover {
+    transform: translateY(-15px) scale(1.02); /* More pronounced lift effect and slight zoom */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: white; /* Light background color change on hover */
+    filter: grayscale(0); /* Remove grayscale effect on hover */
+}
+
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Start with a more pronounced offset */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the normal position */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .travel-tips {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .tips-list {
+        gap: 15px; /* Reduced gap between tips */
+    }
+
+    .tip {
+        padding: 20px; /* Adjust padding inside tips */
+        font-size: 16px; /* Adjust font size for better readability on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
